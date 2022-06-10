@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Colors</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Default colors -->
+    <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
+
+    <!-- Text Colors -->
+    <p class="text-black">Tailwind is awesome</p>
+    <p class="text-white bg-blue-700">Tailwind is awesome</p>
+    <p class="text-red-600">Tailwind is awesome</p>
+    <p class="text-orange-300">Tailwind is awesome</p>
+
+    <!-- Background Colors -->
+
+    <p class="bg-black text-blue-200">Hello from me</p>
+    <p class="bg-blue-400 text-blue-200">Hello from me</p>
+    <p class="bg-emerald-300 text-blue-200">Hello from me</p>
+    <p class="bg-fuchsia-400 text-blue-200">Hello from me</p>
+
+    <!-- Text Underline -->
+
+    <p class="underline decoration-red-900">Hello from me</p>
+    <p class="underline decoration-yellow-900">Hello from me</p>
+    <p class="underline decoration-emerald-900">Hello from me</p>
+
+    <!-- Border Colors -->
+    <input type="text" class="border border-red-500" />
+    <input type="text" class="border border-blue-500" />
+    <input type="text" class="border border-yellow-500" />
+
+    <!-- Divide Colors -->
+
+    <div class="divide-y divide-red-500">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+    </div>
+
+    <!-- Outline Colors -->
+    <button class="outline outline-blue-500">I am a button</button>
+    <button class="outline outline-fuchsia-300">I am a button</button>
+
+    <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button class="shadow-lg shadow-red-400">Shadow</button>
+    <button class="shadow-lg shadow-blue-400/50">Shadow</button>
+
+    <!-- Accent Colors -->
+    <input type="checkbox" class="accent-fuchsia-600" checked />
+
+    <!-- Arbitrary Colors -->
+    <p class="bg-[steelblue] text-blue-200">Hello from me</p>
+    <p class="bg-[#72a472] text-blue-200">Hello from me</p>
+    <p class="bg-[rgb(255,78,44)] text-blue-200">Hello from me</p>
+  </body>
+</html>
